@@ -11,30 +11,39 @@ Katie blew.
 On a Staurdy her young beau
 Called to see if she'd like to go
 To see a show, but Miss Kate said No,
-I'll tell you what you can do""""
+I'll tell you what you can do"""
 #3
 gpa = 3.75
 print(type(gpa))
 #4
-empty_var = null
+empty_var = None
 print(type(empty_var))
 #5
-Num1 = 828^828
-print(num1)
+Num1 = 828**282
+print(Num1)
 #6
 num1 = 52
 num2 = 64
 num3 = 8
 num4 = 42
-math_expression = (num1 - num1) + (num2 / num3) + {num4 % num3} 
+math_expression = (52 - 52) + (64 / 8) + (42 % 8)
 print(math_expression)
 #7
-True = True
+true = True
 isTrue = true is not False
 print(isTrue)
 #8
 weird_word = "Weird"
-is_match = weird_word == "Weird"
+is_match = weird_word == "weird"
 print(is_match)
 #9 false needs to be False to be a boolean
-false
+false = False
+#10
+num1 = 35 / 7
+num2 = 15 ** 3
+num3 = num2 % num1
+num4 = num2 / num1
+print(num1)
+print(num2)
+print(num3)
+print(num4)
