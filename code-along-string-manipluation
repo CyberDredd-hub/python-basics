@@ -1,0 +1,64 @@
+string1 = 'This is a valid string'
+string2 = "This is a valid string"
+#string3 = 'This is not a valid string"
+
+palindrome = "Go hang a salami, I'm a lasgana hog"
+
+#using a quote inside a string
+string3 = "'Always look on the bright side of life' - Monty Python"
+
+#use escape characters to include in strings
+string4 = "\"Always loon ont he bright side of life\" - Monty Python"
+print(string4)
+
+print(len(string4))
+
+name = "       landel       "  
+print(len(name)) 
+print(name)
+
+#strip() function
+name_no_spaces = name.strip()
+print(len(name_no_spaces))
+print(name_no_spaces)
+
+#split() function
+filepath = '/var/landel/here'
+folders = filepath.split('/')
+print(folders)
+print(type(folders))
+
+#join function
+windowspath = "||".join(folders)
+print(windowspath)
+
+#find()
+reservation_name = "Frobman, Abe"
+char_to_find = ","
+#where is the comma?
+char_location = reservation_name.find(char_to_find)
+print(char_location)
+
+#index()
+char_location = reservation_name.index(char_to_find)
+print(char_location)
+
+#transformations
+print(reservation_name.upper())
+print(reservation_name.lower())
+print(reservation_name.title())
+print(reservation_name.swapcase())
+print(reservation_name.capitalize())
+
+#f-strips
+name = 'Landel'
+age = 32
+
+print("my name is {name} and I am {age} years old.")
+print("my name is" + name + "and I am" + str{age} + "years old.")
+
+#replacing
+name = "Landel Thorman"
+name = name.replace("landel", "thorman")
+name = name.replace("landel", "thorman")
+

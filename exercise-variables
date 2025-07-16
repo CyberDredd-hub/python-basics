@@ -1,0 +1,40 @@
+#1
+onomatopoeia = "pop"
+print(type(onomatopoeia))
+#2
+lyrics = """None
+Katie Casey was baseball mad,
+Had the the fever and had it bad.
+Just to root for the home town crew,
+Ev'ry sou
+Katie blew.
+On a Staurdy her young beau
+Called to see if she'd like to go
+To see a show, but Miss Kate said No,
+I'll tell you what you can do""""
+#3
+gpa = 3.75
+print(type(gpa))
+#4
+empty_var = null
+print(type(empty_var))
+#5
+Num1 = 828^828
+print(num1)
+#6
+num1 = 52
+num2 = 64
+num3 = 8
+num4 = 42
+math_expression = (num1 - num1) + (num2 / num3) + {num4 % num3} 
+print(math_expression)
+#7
+True = True
+isTrue = true is not False
+print(isTrue)
+#8
+weird_word = "Weird"
+is_match = weird_word == "Weird"
+print(is_match)
+#9 false needs to be False to be a boolean
+false
