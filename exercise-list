@@ -1,0 +1,16 @@
+#play with for loops
+nba_players = ["Kobe", "MJ", "Lebron"]
+print("", nba_players)
+
+#append items 
+nba_players.append("AI")
+nba_players.append("KD")
+
+#using slicing
+print("Top 3:", nba_players[:3])
+
+#for loop
+print("Best basketball players")
+for list in nba_players:
+    print("-", list)
+
