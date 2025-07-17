@@ -1,0 +1,23 @@
+#practice with if statement
+color = "Red"
+if color == "Red":
+    print("Stop!")
+
+#practice with for loop
+for i in range(2, 11):
+    print(i)
+
+#practice with whie loop
+
+counter = 1
+
+while counter <= 30:
+    if counter % 5 == 0:
+        print(f"{counter}: Fizzbuzz")
+        break
+    elif counter % 3 ==0:
+         print(f"{counter}: Fizz")    
+    counter = counter + 1
+
+else:
+     print("Done with while loop!")

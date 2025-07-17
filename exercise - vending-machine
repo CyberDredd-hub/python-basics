@@ -1,0 +1,40 @@
+"""""
+#Introduction
+Displays a menu of items with prices. 
+Prompts the user to insert money. 
+Allows the user to select an item. 
+Checks if the user has enough funds to purchase the selected item. 
+Dispenses the item (i.e., displays a success message) and subtracts its cost from 
+the user’s funds. 
+Offers the user the opportunity to make additional purchases or exit the 
+simulation.
+"""""
+
+#Dictionary of menu
+items  = {"Soda": 1.50, "Chips": 2.00, "Candy": 1.00, "Water": 1.25}
+
+#Ask user how much money they will be using 
+print("Welcome to Vending Machine")
+funds = float(input("How much money will you be inserting?:"))
+
+#List of availiable prodcuts
+for item , price in items.items():
+    print(f"-{item}: ${price:.2f}")
+
+#User selects item
+for item , price in items.items():
+    print(f"-{item}: ${price:.2f}")
+
+user_selection = input("Please select an item by typing its name")
+    print
+
+
+while funds > 0:
+    user_selection = input("Please select an item by typing its name")
+    print
+    if user_selection is not in items:
+        print("Please choose from the provided menu")
+
+
+
+

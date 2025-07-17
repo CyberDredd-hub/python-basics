@@ -1,0 +1,15 @@
+#While loop vending machine
+
+#prompt user to select an item by typing its name
+
+#use an if/elif/else block to check if them item exists in the items dictionary
+
+#if the item is not found - display an error message and use continue to prompt user again
+
+#if the item is found - compare the cost of the selected item with availiable funds
+
+#sufficient funds - subtratc the item's price from the funds printing a message that the item dispensed and show remianing balance
+
+#insuffcient funds - inform the user of insuffcicient funds and ask if they wish to inseet more money or cancel the transaction. If user wishes to add funds, prompt for addtional funds. If not break to exit the loop
+
+#After a successful transaction, ask the user wether they want to make another purchase
