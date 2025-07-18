@@ -1,0 +1,39 @@
+#functions are reusable pieces of code
+
+
+print("Hello")
+print("My name is Python.")
+
+def greet(name):
+    print(f'Hello, {name}!')
+
+def user_input(prompt):
+    input_value = input(prompt)
+
+greet("Landel")
+
+def main_menu():
+    print("Welcome to the main menu!")
+    print("1. Start")
+    print("2. Exit")
+
+    choice = input("Please chose an option:")
+    print(f"You chose option{choice}")
+    return choice
+
+    
+main_menu_choice = main_menu()
+if main_menu_choice == 1:
+    print("Starting the program...")
+
+else:
+    print("Exiting the program. Goodbye!")
+
+
+
+
+
+
+
+greet("Landel")
+main_menu()

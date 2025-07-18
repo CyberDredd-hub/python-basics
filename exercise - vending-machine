@@ -25,7 +25,7 @@ for item , price in items.items():
 for item , price in items.items():
     print(f"-{item}: ${price:.2f}")
 
-user_selection = input("Please select an item by typing its name")
+ def user_selection = input("Please select an item by typing its name")
     print
 
 
