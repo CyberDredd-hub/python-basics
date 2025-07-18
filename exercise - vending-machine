@@ -11,29 +11,65 @@ simulation.
 """""
 
 #Dictionary of menu
-items  = {"Soda": 1.50, "Chips": 2.00, "Candy": 1.00, "Water": 1.25}
-
-#Ask user how much money they will be using 
-print("Welcome to Vending Machine")
-funds = float(input("How much money will you be inserting?:"))
+items  = {
+    "Soda": 1.50, 
+    "Chips": 2.00, 
+    "Candy": 1.00, 
+    "Water": 1.25
+    }
+#prompting user input for funds
+funds_input = input("How much money are you inserting?")
+funds = float(funds_input)
 
 #List of availiable prodcuts
 for item , price in items.items():
-    print(f"-{item}: ${price:.2f}")
+    print(f"{item.title()} - ${price:.2f}")
 
-#User selects item
-for item , price in items.items():
-    print(f"-{item}: ${price:.2f}")
-
- def user_selection = input("Please select an item by typing its name")
-    print
-
-
+#Vending loop
 while funds > 0:
-    user_selection = input("Please select an item by typing its name")
-    print
-    if user_selection is not in items:
-        print("Please choose from the provided menu")
+    print(f"Current Balance: ${funds:2f}")
+    choice = input("Select an item by name:").lower()
+
+    if choice == items:
+        print("Great choice!")
+    if choice == "exit":
+        print("Transaction canceled. Returning your balance...")
+        break
+    if choice not in items:
+        print("Item not found. Make another selection...")
+        continue
+    
+    price = items[choice]
+
+    if funds >= price:
+        funds - price
+        print(f"Dispensing {choice.title()})... Remaining balance: ${funds:.2f}")
+    else:
+        print("Insuffcienct funds for {choice.title()} (costs ${price:.2f}).")
+        add_more = input("Do you want to add more money? (yes/no):").lower()
+        if add_more == "yes":
+            extra = float(input("Insert additional money: $"))
+            funds += extra
+            print("New Balance: ${funds:.2f}")
+            continue
+        else:
+            print("Transaction canceled.")
+            break
+
+    another = input("Woud you like to make another purchase? (yes/no):").lower()
+    if another != "yes":
+        print("Thank you for shopping with us!")
+        break
+
+
+
+
+
+
+
+ 
+
+
 
 
 

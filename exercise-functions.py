@@ -11,13 +11,11 @@ def traffic_light():
     print(f'Current state of the light:{state}')
     return state
 
-traffic_light_state = traffic_light()
-
 if traffic_light == "red":
     red_light()
-elif state == "yellow":
+elif traffic_light == "yellow":
     yellow_light()
-elif state == "green":
+elif traffic_light == "green":
     green_light()
 else:
     print("Error the state is not red, yellow or green!")
