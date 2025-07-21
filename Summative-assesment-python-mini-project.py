@@ -13,7 +13,7 @@ def get_letter_grade(score):
     
 #function to print student summary
 def print_student_summary(student):
-    full_name = f"{student["first_name"]} {student["last_name"]}"
+    full_name = (f"{student["first_name"]} {student["last_name"]}")
     print(f"Name: {full_name}, Score: {student["score"]}, Grade: {student["grade"]}")
 
 #List to store students
@@ -66,8 +66,8 @@ with open("grades.text", "w") as file:
 
 print("\nStudent information saved to 'grades.txt'.")
 
-get_letter_grade()
-print_student_summary()
+get_letter_grade(91)
+print_student_summary(88)
 
 
 
