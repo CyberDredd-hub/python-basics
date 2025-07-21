@@ -31,7 +31,7 @@ while True:
             print("Score must be between 0 and 100")
             continue
     except ValueError:
-        print("Invalid score. Please renter using a number.")
+        print("Invalid score. Please enter using a number.")
         continue
 
 #function to print student summary
@@ -66,8 +66,8 @@ with open("grades.text", "w") as file:
 
 print("\nStudent information saved to 'grades.txt'.")
 
-get_letter_grade()
-print_student_summary()
+get_letter_grade(score)
+print_student_summary(student)
 
 
 
