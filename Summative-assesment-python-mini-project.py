@@ -55,7 +55,7 @@ students.append(student)
 print("\n--- Student Summaries ---")
 if students:
     for s in students:
-        print_student_summary
+        print_student_summary()
     else:
         print("No student names were entered")
 
