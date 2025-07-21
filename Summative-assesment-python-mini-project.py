@@ -66,8 +66,8 @@ with open("grades.text", "w") as file:
 
 print("\nStudent information saved to 'grades.txt'.")
 
-get_letter_grade(91)
-print_student_summary(88)
+get_letter_grade()
+print_student_summary()
 
 
 
