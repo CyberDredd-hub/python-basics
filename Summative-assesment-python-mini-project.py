@@ -40,7 +40,7 @@ while True:
         continue
 
 #calculating the letter grade
-grade = get_letter_grade (score)
+grade = get_letter_grade(score)
 
 #dictionary and append to list
 student = {
@@ -65,6 +65,10 @@ with open("grades.text", "w") as file:
         file.write(f"{full_name}, score:{s["score"]}, grade:{s["grade"]}\n")
 
 print("\nStudent information saved to 'grades.txt'.")
+
+get_letter_grade()
+print_student_summary()
+
 
 
 
