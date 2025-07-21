@@ -1,5 +1,5 @@
 #function to calculate  letter grades
-def _get_letter_grade(score):
+def get_letter_grade(score):
     if score >= 90:
         return "A"
     elif score >= 80:
@@ -40,7 +40,7 @@ while True:
         continue
 
 #calculating the letter grade
-grade = get_letter_grade(score)
+grade = get_letter_grade (score)
 
 #dictionary and append to list
 student = {
