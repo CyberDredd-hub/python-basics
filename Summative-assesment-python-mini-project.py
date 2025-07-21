@@ -35,7 +35,7 @@ while True:
         continue
 
 #function to print student summary
-def print_student_summary(student):
+def print_student_summary(students):
     full_name = (f"{student["first_name"]} {student["last_name"]}")
     print(f"Name: {full_name}, Score: {student["score"]}, Grade: {student["grade"]}")
 
