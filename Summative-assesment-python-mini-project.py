@@ -10,11 +10,6 @@ def get_letter_grade(score):
         return "D"
     else:
         return "F"
-    
-#function to print student summary
-def print_student_summary(student):
-    full_name = (f"{student["first_name"]} {student["last_name"]}")
-    print(f"Name: {full_name}, Score: {student["score"]}, Grade: {student["grade"]}")
 
 #List to store students
 students = []
@@ -28,6 +23,11 @@ while True:
     
     first_name = first_name.strip().title()
     last_name = last_name.strip().title()
+
+#function to print student summary
+def print_student_summary(student):
+    full_name = (f"{student["first_name"]} {student["last_name"]}")
+    print(f"Name: {full_name}, Score: {student["score"]}, Grade: {student["grade"]}")
 
 #retrive score and convert string to float
     try:
