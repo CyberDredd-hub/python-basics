@@ -31,7 +31,7 @@ while True:
 
 #retrive score and convert string to float
     try:
-        score = float(input(f"Enter score for {first_name} {last_name}:"))
+        score = float(input(f"Enter score for {first_name}, {last_name}:"))
         if score < 0 or score > 100:
             print("Score must be between 0 and 100")
             continue
@@ -53,8 +53,11 @@ students.append(student)
 
 #Printing student summary
 print("\n--- Student Summaries ---")
-for s in students:
-    print_student_summary
+if students:
+    for s in students:
+        print_student_summary
+    else:
+        print("No student names were entered")
 
 with open("grades.text", "w") as file:
     for s in students:
