@@ -24,11 +24,6 @@ while True:
     first_name = first_name.strip().title()
     last_name = last_name.strip().title()
 
-#function to print student summary
-def print_student_summary(student):
-    full_name = (f"{student["first_name"]} {student["last_name"]}")
-    print(f"Name: {full_name}, Score: {student["score"]}, Grade: {student["grade"]}")
-
 #retrive score and convert string to float
     try:
         score = float(input(f"Enter score for {first_name}, {last_name}:"))
@@ -38,6 +33,11 @@ def print_student_summary(student):
     except ValueError:
         print("Invalid score. Please renter using a number.")
         continue
+
+#function to print student summary
+def print_student_summary(student):
+    full_name = (f"{student["first_name"]} {student["last_name"]}")
+    print(f"Name: {full_name}, Score: {student["score"]}, Grade: {student["grade"]}")
 
 #calculating the letter grade
 grade = get_letter_grade(score)
